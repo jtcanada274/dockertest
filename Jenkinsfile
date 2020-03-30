@@ -3,10 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                //sh 'node --version'
-                script {
-                    tail -f /dev/null
-                }
+                sh 'node --version'                
             }
         }
     }
