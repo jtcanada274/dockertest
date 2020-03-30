@@ -4,7 +4,9 @@ pipeline {
         stage('Test') {
             steps {
                 //sh 'node --version'
-                tail -f /dev/null
+                script {
+                    tail -f /dev/null
+                }
             }
         }
     }
